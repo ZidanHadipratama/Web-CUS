@@ -20,7 +20,7 @@ const Catalog = ({ items, sizename }: CatalogProps) => {
     <>
       <div className="grid grid-cols-1 gap-4 bg-[#fff] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {items.map((item, index) => (
-          <div key={index}>
+          <div className="space-y-2" key={index}>
             <div className="group relative h-96">
               {[
                 "h-full w-full object-cover object-top duration-200 ease-in-out rounded",
@@ -36,10 +36,8 @@ const Catalog = ({ items, sizename }: CatalogProps) => {
                 />
               ))}
             </div>
-            <div className="space-y-2 py-4">
-              <Typography variant="bm" weight="bold">
-                {item.name}
-              </Typography>
+            <div className="space-y-2">
+              <Typography weight="bold">{item.name}</Typography>
               <div>
                 <table>
                   <tbody>

@@ -27,7 +27,7 @@ const Product = () => {
   return (
     <>
       <Landing className={`${pxrule} lg:px-44`} />
-      <div className="py-0">
+      <div>
         {sections.map((section, index) => (
           <div className="space-y-6" key={index}>
             <BannerCatalog
@@ -35,7 +35,7 @@ const Product = () => {
               href={`/product#${section.href}`}
               className={`${index % 2 != 0 ? "order-first md:order-last" : ""} ${section.image}`}
             />
-            <div className={pxrule} key={index} id={section.href}>
+            <div className={`pb-6 ${pxrule}`} key={index} id={section.href}>
               <section.component />
             </div>
           </div>
