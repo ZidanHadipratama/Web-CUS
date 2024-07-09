@@ -1,6 +1,5 @@
-import Typography from "@/sandbox/Typography";
-import Image from "next/image";
 import React from "react";
+import Catalog from "./Catalog";
 
 const others = [
   {
@@ -85,53 +84,7 @@ const others = [
 const Other = () => {
   return (
     <>
-      <div className="grid grid-cols-1 gap-4 bg-[#fff] sm:grid-cols-2 md:grid-cols-4">
-        {others.map((other, index) => (
-          <div key={index}>
-            <div className="group relative h-96">
-              {[
-                "h-full w-full rounded-md object-cover object-top duration-200 ease-in-out group-hover:blur-md cursor-pointer",
-                "absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform rounded-md duration-200 ease-in-out group-hover:block cursor-pointer",
-              ].map((className, index) => (
-                <Image
-                  key={index}
-                  src={other.image}
-                  alt="bottles"
-                  width={200}
-                  height={0}
-                  className={`${className} duration-300`}
-                />
-              ))}
-            </div>
-            <div className="space-y-2 py-4">
-              <Typography variant="bm" weight="bold">
-                {other.name}
-              </Typography>
-              <div>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td>Size</td>
-                      <td className="px-2">:</td>
-                      <td>{other.size}</td>
-                    </tr>
-                    <tr>
-                      <td>Neck</td>
-                      <td className="px-2">:</td>
-                      <td>{other.neck}</td>
-                    </tr>
-                    <tr>
-                      <td>Material</td>
-                      <td className="px-2">:</td>
-                      <td>{other.material}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <Catalog items={others} sizename="" />
     </>
   );
 };

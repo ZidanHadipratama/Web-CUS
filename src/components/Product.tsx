@@ -2,12 +2,23 @@ import React from "react";
 import Bottle from "./Catalog/Bottle";
 import Cap from "./Catalog/Cap";
 import Other from "./Catalog/Other";
-import Typography from "@/sandbox/Typography";
+import BannerCatalog from "./Catalog/BannerCatalog";
+import Landing from "./Catalog/Landing";
 
 const sections = [
-  { component: Bottle, title: "BOTTLE" },
-  { component: Cap, title: "CAP" },
-  { component: Other, title: "OTHER" },
+  {
+    component: Bottle,
+    title: "BOTTLE",
+    image: "bg-bottle_banner",
+    href: "bottle",
+  },
+  { component: Cap, title: "CAP", image: "bg-cap_banner", href: "cap" },
+  {
+    component: Other,
+    title: "OTHER",
+    image: "bg-other_banner",
+    href: "other",
+  },
 ];
 
 const pxrule = "px-8 sm:px-10 lg:px-16";
@@ -15,31 +26,18 @@ const pxrule = "px-8 sm:px-10 lg:px-16";
 const Product = () => {
   return (
     <>
-      {/* Landing */}
-      <div
-        className={`${pxrule} flex h-[60dvh] flex-col items-center justify-center bg-catalog-landing bg-cover bg-no-repeat text-center text-[#fff] md:items-start md:text-left`}
-      >
-        <div className="space-y-4">
-          <Typography variant="h1" weight="bold">
-            Our Product
-          </Typography>
-          <Typography variant="bm" weight="medium">
-            Your Trusted Partner in Innovative Plastic Packaging and Mold Design
-          </Typography>
-        </div>
-      </div>
-
-      {/* Product */}
-      <div className={`${pxrule} space-y-12 py-6`}>
-        {sections.map((secion, index) => (
-          <div className="space-y-4" key={index}>
-            <div className="flex items-center gap-3">
-              <Typography variant="h3" weight="medium">
-                {secion.title}
-              </Typography>
-              <hr className="h-[2px] w-full bg-[#000]" />
+      <Landing className={pxrule} />
+      <div className="py-0">
+        {sections.map((section, index) => (
+          <div className="space-y-6" key={index}>
+            <BannerCatalog
+              title={section.title}
+              href={`/product#${section.href}`}
+              className={`${index % 2 != 0 ? "order-first md:order-last" : ""} ${section.image}`}
+            />
+            <div className={pxrule} key={index} id={section.href}>
+              <section.component />
             </div>
-            <secion.component />
           </div>
         ))}
       </div>
