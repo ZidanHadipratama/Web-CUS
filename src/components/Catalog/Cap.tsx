@@ -68,14 +68,10 @@ const caps = [
   },
 ];
 
-const pxrule = "px-8 sm:px-10 lg:px-16";
-
 const Cap = () => {
   return (
     <>
-      <div
-        className={`${pxrule} grid grid-cols-1 gap-4 bg-[#fff] sm:grid-cols-2 md:grid-cols-4`}
-      >
+      <div className="grid grid-cols-1 gap-4 bg-[#fff] sm:grid-cols-2 md:grid-cols-4">
         {caps.map((cap, index) => (
           <div key={index}>
             <div className="group relative h-96">
