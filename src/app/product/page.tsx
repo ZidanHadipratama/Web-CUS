@@ -1,13 +1,13 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Product from "@/components/Product";
 import React from "react";
-import TypographyPage from "./sandbox/typography/page";
 
 const page = () => {
   return (
     <>
       <Navbar />
-      <TypographyPage />
+      <Product />
       <Footer />
     </>
   );
