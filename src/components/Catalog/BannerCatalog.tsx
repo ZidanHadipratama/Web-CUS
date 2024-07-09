@@ -17,7 +17,10 @@ const BannerCatalog = ({
         <div className={`${className} bg-center md:bg-center`} />
         <div>
           <div className="flex h-full flex-col items-center justify-center space-y-4">
-            <Typography variant="h2" className="tracking-widest">
+            <Typography
+              variant="h2"
+              className="text-[24px] leading-[2rem] tracking-widest md:text-[48px] md:leading-[3rem]"
+            >
               {title}
             </Typography>
             <Button

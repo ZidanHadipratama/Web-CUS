@@ -38,7 +38,7 @@ const Footer = () => {
                 <Typography
                   variant="bm"
                   weight="semibold"
-                  className="text-orange1"
+                  className="text-[14px] leading-[1.25rem] text-orange1 md:text-[20px] md:leading-[1.75rem]"
                 >
                   Useful Links
                 </Typography>
@@ -57,7 +57,7 @@ const Footer = () => {
                 <Typography
                   variant="bm"
                   weight="semibold"
-                  className="text-orange1"
+                  className="text-[14px] leading-[1.25rem] text-orange1 md:text-[20px] md:leading-[1.75rem]"
                 >
                   Phone
                 </Typography>
@@ -70,7 +70,7 @@ const Footer = () => {
                 <Typography
                   variant="bm"
                   weight="semibold"
-                  className="text-orange1"
+                  className="text-[14px] leading-[1.25rem] text-orange1 md:text-[20px] md:leading-[1.75rem]"
                 >
                   Address
                 </Typography>

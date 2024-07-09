@@ -78,7 +78,7 @@ const Navbar = () => {
               key={index}
               weight="medium"
               variant="bs"
-              className="hover:text-orange2 active:text-orange3"
+              className="text-[12px] leading-[1rem] hover:text-orange2 active:text-orange3 md:text-[18px] md:leading-[1.5rem]"
             >
               <Link href={navlink.link}>{navlink.name}</Link>
             </Typography>
