@@ -1,15 +1,12 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import LandingPage from "@/components/pages/landingPage/landing";
+import Layout from "@/layouts/Layouts";
 import React from "react";
-import TypographyPage from "./sandbox/typography/page";
 
 const page = () => {
   return (
-    <>
-      <Navbar />
-      <TypographyPage />
-      <Footer />
-    </>
+    <Layout withCTA withFooter withNavbar>
+      <LandingPage />
+    </Layout>
   );
 };
 
