@@ -28,7 +28,7 @@ const Navbar = () => {
     <>
       {/* Mobile */}
       <div
-        className={`${click ? "translate-x-0" : "translate-x-full"} fixed z-50 flex h-screen w-full flex-col items-center justify-center gap-28 bg-[#000] duration-300 md:hidden`}
+        className={`${click ? "translate-x-0" : "translate-x-full"} fixed z-[103] flex h-screen w-full flex-col items-center justify-center gap-28 bg-[#000] duration-300 md:hidden`}
       >
         <div className="flex flex-col items-center gap-12">
           <div>
@@ -67,7 +67,7 @@ const Navbar = () => {
 
       {/* Desktop */}
       <div
-        className={`fixed z-40 flex w-full flex-row items-center justify-between bg-[#fff] py-4 ${pxrule}`}
+        className={`fixed z-[102] flex w-full flex-row items-center justify-between bg-[#fff] py-4 ${pxrule}`}
       >
         <div>
           <Image src={Logo} width={75} height={0} alt="Logo" />
