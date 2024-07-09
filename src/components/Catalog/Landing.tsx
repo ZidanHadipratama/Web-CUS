@@ -13,7 +13,7 @@ const Landing = ({ className }: { className: string }) => {
   return (
     <>
       <div
-        className={`${className} flex h-[100dvh] flex-col items-center justify-center bg-catalog-landing bg-cover bg-no-repeat text-center text-[#fff] md:items-start md:text-left`}
+        className={`${className} flex h-screen flex-col items-center justify-center bg-catalog-landing bg-cover bg-no-repeat text-center text-[#fff] md:items-start md:text-left`}
       >
         <div data-aos="fade-up" data-aos-duration={1500} className="space-y-4">
           <Typography variant="h1" weight="bold">

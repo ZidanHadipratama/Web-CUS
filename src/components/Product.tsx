@@ -26,7 +26,7 @@ const pxrule = "px-8 sm:px-10 lg:px-16";
 const Product = () => {
   return (
     <>
-      <Landing className={pxrule} />
+      <Landing className={`${pxrule} lg:px-44`} />
       <div className="py-0">
         {sections.map((section, index) => (
           <div className="space-y-6" key={index}>
