@@ -1,6 +1,5 @@
-import Typography from "@/sandbox/Typography";
-import Image from "next/image";
 import React from "react";
+import Catalog from "./Catalog";
 
 const bottles = [
   {
@@ -148,53 +147,7 @@ const bottles = [
 const Bottle = () => {
   return (
     <>
-      <div className="grid grid-cols-1 gap-4 bg-[#fff] sm:grid-cols-2 md:grid-cols-4">
-        {bottles.map((bottle, index) => (
-          <div key={index}>
-            <div className="group relative h-96">
-              {[
-                "h-full w-full rounded-md object-cover object-top duration-200 ease-in-out group-hover:blur-md cursor-pointer",
-                "absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform rounded-md duration-200 ease-in-out group-hover:block cursor-pointer",
-              ].map((className, index) => (
-                <Image
-                  key={index}
-                  src={bottle.image}
-                  alt="bottles"
-                  width={200}
-                  height={0}
-                  className={`${className} duration-300`}
-                />
-              ))}
-            </div>
-            <div className="space-y-2 py-4">
-              <Typography variant="bm" weight="bold">
-                {bottle.name}
-              </Typography>
-              <div>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td>Cap Size</td>
-                      <td className="px-2">:</td>
-                      <td>{bottle.size}</td>
-                    </tr>
-                    <tr>
-                      <td>Neck</td>
-                      <td className="px-2">:</td>
-                      <td>{bottle.neck}</td>
-                    </tr>
-                    <tr>
-                      <td>Material</td>
-                      <td className="px-2">:</td>
-                      <td>{bottle.material}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <Catalog items={bottles} sizename="Bottle" />
     </>
   );
 };
