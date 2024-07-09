@@ -13,6 +13,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "catalog-landing": "url('/images/catalog/landing/bg.jpg')",
+        bottle_banner: "url('/images/catalog/bottle_banner.jpg')",
+        cap_banner: "url('/images/catalog/cap_banner.jpg')",
+        other_banner: "url('/images/catalog/other_banner.jpg')",
       },
       fontFamily: {
         poppins: ["var(--font-poppins)"],
