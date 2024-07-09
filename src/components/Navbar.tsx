@@ -67,7 +67,7 @@ const Navbar = () => {
 
       {/* Desktop */}
       <div
-        className={`sticky top-0 z-[102] flex w-full flex-row items-center justify-between bg-[#fff] py-4 ${pxrule}`}
+        className={`fixed z-[102] flex w-full flex-row items-center justify-between bg-[#fff] py-4 ${pxrule}`}
       >
         <div>
           <Image src={Logo} width={75} height={0} alt="Logo" />

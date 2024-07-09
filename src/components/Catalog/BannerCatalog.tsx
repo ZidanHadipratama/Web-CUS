@@ -31,6 +31,7 @@ const BannerCatalog = ({
                 "&:active": {
                   background: "#ca5a0a",
                 },
+                padding: '0.5rem 1rem'
               }}
             >
               VIEW CATALOG
