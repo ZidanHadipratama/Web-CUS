@@ -1,9 +1,9 @@
 import React from "react";
-import Bottle from "./Catalog/Bottle";
-import Cap from "./Catalog/Cap";
-import Other from "./Catalog/Other";
-import BannerCatalog from "./Catalog/BannerCatalog";
-import Landing from "./Catalog/Landing";
+import Bottle from "./Bottle";
+import Cap from "./Cap";
+import Other from "./Other";
+import BannerCatalog from "./BannerCatalog";
+import Landing from "./Landing";
 
 const sections = [
   {
@@ -21,12 +21,12 @@ const sections = [
   },
 ];
 
-const pxrule = "px-8 sm:px-10 lg:px-16";
+const pxrule = "px-8 sm:px-10 lg:px-44";
 
-const Product = () => {
+const ProductPage = () => {
   return (
     <>
-      <Landing className={`${pxrule} lg:px-44`} />
+      <Landing className={pxrule} />
       <div>
         {sections.map((section, index) => (
           <div className="space-y-6" key={index}>
@@ -35,7 +35,11 @@ const Product = () => {
               href={`/product#${section.href}`}
               className={`${index % 2 != 0 ? "order-first md:order-last" : ""} ${section.image}`}
             />
-            <div className={`pb-6 ${pxrule}`} key={index} id={section.href}>
+            <div
+              className={`!px-32 pb-6 ${pxrule}`}
+              key={index}
+              id={section.href}
+            >
               <section.component />
             </div>
           </div>
@@ -45,4 +49,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default ProductPage;
