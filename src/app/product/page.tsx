@@ -1,13 +1,14 @@
+import ProductPage from "@/components/Catalog/ProductPage";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Product from "@/components/Product";
+
 import React from "react";
 
 const page = () => {
   return (
     <>
       <Navbar />
-      <Product />
+      <ProductPage />
       <Footer />
     </>
   );

@@ -18,23 +18,18 @@ interface CatalogProps {
 const Catalog = ({ items, sizename }: CatalogProps) => {
   return (
     <>
-      <div className="grid grid-cols-1 gap-4 bg-[#fff] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-6 bg-[#fff] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {items.map((item, index) => (
           <div className="space-y-2" key={index}>
-            <div className="group relative h-96">
-              {[
-                "h-full w-full object-cover object-top duration-200 ease-in-out rounded-lg",
-                // "absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform duration-200 ease-in-out group-hover:block cursor-pointer",
-              ].map((className, index) => (
-                <Image
-                  key={index}
-                  src={item.image}
-                  alt="bottles"
-                  width={200}
-                  height={0}
-                  className={`${className} duration-300`}
-                />
-              ))}
+            <div className="group relative h-72">
+              <Image
+                key={index}
+                src={item.image}
+                alt="bottles"
+                width={200}
+                height={0}
+                className="h-full w-full rounded-lg object-cover object-top duration-200 ease-in-out"
+              />
             </div>
             <div>
               <Typography weight="bold">{item.name}</Typography>
