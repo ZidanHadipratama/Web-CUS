@@ -301,7 +301,7 @@ export default function LandingPage() {
               >
                 <div className="group relative">
                   {[
-                    "h-full w-full object-cover object-top duration-200 ease-in-out rounded-lg",
+                    "w-full object-cover object-top duration-200 ease-in-out rounded-lg",
                     // "absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform duration-200 ease-in-out group-hover:block cursor-pointer",
                   ].map((className, index) => (
                     <Image

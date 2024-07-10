@@ -1,8 +1,8 @@
 // @SEE https://www.npmjs.com/package/next-seo#default-seo-configuration
 
-import { DefaultSeoProps } from "next-seo";
+// import { DefaultSeoProps } from "next-seo";
 
-const config: DefaultSeoProps = {
+const config = {
     openGraph: {
         type: 'website',
         locale: 'id_ID',
