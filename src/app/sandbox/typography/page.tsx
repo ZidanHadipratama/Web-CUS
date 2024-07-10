@@ -66,6 +66,16 @@ export default function TypographyPage() {
         <Typography weight="medium" variant="bs">
           Body Small Medium
         </Typography>
+        <div className="text-[36px] leading-[2.5rem] md:text-[72px] md:leading-[4.5rem]"></div>
+        <div className="text-[24px] leading-[2rem] md:text-[48px] md:leading-[3rem]"></div>
+        <div className="text-[18px] leading-[1.75rem] md:text-[30px] md:leading-[2.25rem]"></div>
+        <div className="text-[16px] leading-[1.5rem] md:text-[24px] md:leading-[2.2rem]"></div>
+        <div className="text-[14px] leading-[1.25rem] md:text-[20px] md:leading-[1.75rem]"></div>
+        <div className="text-[12px] leading-[1rem] md:text-[18px] md:leading-[1.5rem]"></div>
+        <div className="font-bold"></div>
+        <div className="font-semibold"></div>
+        <div className="font-medium"></div>
+        <div className="font-poppins"></div>
       </div>
     </main>
   );

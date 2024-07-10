@@ -13,8 +13,10 @@ const BannerCatalog = ({
 }) => {
   return (
     <>
-      <div className="grid h-screen grid-cols-1 md:grid-cols-2">
-        <div className={`${className} bg-center md:bg-center`} />
+      <div className="grid h-[80vh] grid-cols-1 sm:h-[500px] md:grid-cols-2 lg:h-[80vh]">
+        <div
+          className={`${className} bg-cover bg-center bg-no-repeat md:bg-center`}
+        />
         <div>
           <div className="flex h-full flex-col items-center justify-center space-y-4">
             <Typography variant="h2" className="tracking-widest">
@@ -31,6 +33,7 @@ const BannerCatalog = ({
                 "&:active": {
                   background: "#ca5a0a",
                 },
+                padding: "0.5rem 1rem",
               }}
             >
               VIEW CATALOG
