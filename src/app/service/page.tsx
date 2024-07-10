@@ -1,5 +1,6 @@
 "use client";
 
+import SEO from "@/components/SEO";
 import Layout from "@/layouts/Layouts";
 import Typography from "@/sandbox/Typography";
 import { Button } from "@mui/material";
@@ -15,6 +16,7 @@ export default function PageService() {
 
   return (
     <Layout withNavbar withFooter className="overflow-hidden">
+      <SEO title="Our Service" />
       <div className="relative h-[640px] w-full">
         <Image
           src={"/images/service/upSectionMobile.png"}

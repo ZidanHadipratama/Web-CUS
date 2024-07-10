@@ -1,7 +1,7 @@
 import React from "react";
 import Catalog from "./Catalog";
 
-const bottles = [
+export const bottles = [
   {
     image: "/images/catalog/bottle/b1.png",
     name: "BR BOTTLE 100",
