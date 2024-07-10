@@ -6,6 +6,32 @@ import Image from "next/image";
 import Typography from "@/sandbox/Typography";
 import Link from "next/link";
 import { Button } from "@mui/material";
+import SEO from "@/components/SEO";
+import { FaArrowRight } from "react-icons/fa";
+
+const bottles = [
+  {
+    image: "/images/catalog/bottle/b1.png",
+    name: "BR BOTTLE 100",
+    size: "100 ml",
+    neck: "Ulir 24/410",
+    material: "PET",
+  },
+  {
+    image: "/images/catalog/bottle/b2.png",
+    name: "BR BOTTLE 250",
+    size: "250 ml",
+    neck: "Ulir 24/410",
+    material: "PET",
+  },
+  {
+    image: "/images/catalog/bottle/b3.png",
+    name: "BR BOTTLE 60",
+    size: "60 ml",
+    neck: "Ulir 18/410",
+    material: "PET",
+  },
+]
 
 export default function LandingPage() {
   useEffect(() => {
@@ -16,6 +42,7 @@ export default function LandingPage() {
 
   return (
     <div className="overflow-hidden">
+      <SEO title="Home" />
       <div className="relative h-[640px] w-full">
         <Image
           src={"/images/upLanding/hero-mobile.png"}
@@ -241,6 +268,79 @@ export default function LandingPage() {
               </Typography>
             </Button>
           </Link>
+        </div>
+      </div>
+
+      <div className="lg:pt-48 pt-32 px-8">
+        <div
+          className="px-7 sm:px-20 md:px-24 2xl:px-[12%]"
+          data-aos="fade-up"
+          data-aos-duration={1500}
+        >
+          <Typography className="text-center text-[36px] font-bold uppercase sm:text-[40px]">
+            Our Products
+          </Typography>
+          <Typography className="font-regular text-center text-[18px] sm:text-[22px]">
+            Your Trusted Partner in Innovative Plastic Packaging and Mold Design
+          </Typography>
+        </div>
+        <div className="pt-12 py-12 px-3 min-[500px]:px-10 sm:px-12 md:px-16 xl:px-32 2xl:px-[18%]">
+          <div className="mb-8" data-aos="fade-up"
+            data-aos-duration={1500}>
+            <Link href={'/product'}>
+              <Typography className="flex items-center gap-2">
+                Other Products <FaArrowRight />
+              </Typography>
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 justify-center">
+            {bottles.map((item: any, index: number) => (
+              <div className="space-y-2" key={index}
+                data-aos="fade-up"
+                data-aos-duration={1500}
+              >
+                <div className="group relative">
+                  {[
+                    "w-full object-cover object-top duration-200 ease-in-out rounded-lg",
+                    // "absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform duration-200 ease-in-out group-hover:block cursor-pointer",
+                  ].map((className, index) => (
+                    <Image
+                      key={index}
+                      src={item.image}
+                      alt="bottles"
+                      width={100}
+                      height={0}
+                      className={`${className} h-[300px] sm:h-[400px] duration-300`}
+                    />
+                  ))}
+                </div>
+                <div className="bg-white shadow-lg rounded-b-xl p-6">
+                  <Typography weight="bold">{item.name}</Typography>
+                  <div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>{item.size} Size</td>
+                          <td className="px-2">:</td>
+                          <td>{item.size}</td>
+                        </tr>
+                        <tr>
+                          <td>Neck</td>
+                          <td className="px-2">:</td>
+                          <td>{item.neck}</td>
+                        </tr>
+                        <tr>
+                          <td>Material</td>
+                          <td className="px-2">:</td>
+                          <td>{item.material}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

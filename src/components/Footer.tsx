@@ -13,7 +13,6 @@ const pxrule = "px-8 sm:px-10 lg:px-16";
 
 const footerlinks = [
   { name: "Home", link: "/" },
-  { name: "About", link: "/about" },
   { name: "Our Service", link: "/service" },
   { name: "Our Product", link: "/product" },
 ];

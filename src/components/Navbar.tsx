@@ -11,7 +11,6 @@ import { IoMdClose } from "react-icons/io";
 
 const navlinks = [
   { name: "Home", link: "/" },
-  { name: "About", link: "/about" },
   { name: "Our Service", link: "/service" },
   { name: "Our Product", link: "/product" },
 ];
@@ -67,7 +66,7 @@ const Navbar = () => {
 
       {/* Desktop */}
       <div
-        className={`fixed z-[102] flex w-full flex-row items-center justify-between bg-[#fff] py-4 ${pxrule}`}
+        className={`fixed z-[102] flex w-full flex-row items-center justify-between bg-[#fff] py-1 ${pxrule}`}
       >
         <div>
           <Image src={Logo} width={75} height={0} alt="Logo" />

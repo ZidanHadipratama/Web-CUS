@@ -4,6 +4,7 @@ import Cap from "./Cap";
 import Other from "./Other";
 import BannerCatalog from "./BannerCatalog";
 import Landing from "./Landing";
+import SEO from "../SEO";
 
 const sections = [
   {
@@ -26,7 +27,8 @@ const pxrule = "px-8 sm:px-10 lg:px-44";
 const ProductPage = () => {
   return (
     <>
-      <Landing className={pxrule} />
+      <Landing className={`${pxrule} lg:px-44`} />
+      <SEO title="Our Product" />
       <div>
         {sections.map((section, index) => (
           <div className="space-y-6" key={index}>

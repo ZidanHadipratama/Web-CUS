@@ -12,7 +12,7 @@ interface Item {
 
 interface CatalogProps {
   items: Item[];
-  sizename: string;
+  sizename?: string;
 }
 
 const Catalog = ({ items, sizename }: CatalogProps) => {
