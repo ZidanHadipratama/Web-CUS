@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Bottle from "./Bottle";
 import Cap from "./Cap";
@@ -27,21 +28,13 @@ const pxrule = "px-8 sm:px-10 lg:px-44";
 const ProductPage = () => {
   return (
     <>
-      <Landing className={`${pxrule} lg:px-44`} />
+      <Landing />
       <SEO title="Our Product" />
-      <div>
+      <div className={`space-y-6 py-6 ${pxrule}`}>
         {sections.map((section, index) => (
-          <div className="space-y-6" key={index}>
-            <BannerCatalog
-              title={section.title}
-              href={`/product#${section.href}`}
-              className={`${index % 2 != 0 ? "order-first md:order-last" : ""} ${section.image}`}
-            />
-            <div
-              className={`!px-32 pb-6 ${pxrule}`}
-              key={index}
-              id={section.href}
-            >
+          <div className="space-y-4" key={index}>
+            <BannerCatalog title={section.title} />
+            <div key={index} id={section.href}>
               <section.component />
             </div>
           </div>

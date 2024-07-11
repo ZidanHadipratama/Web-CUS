@@ -1,6 +1,8 @@
 import Typography from "@/sandbox/Typography";
 import Image from "next/image";
 import React from "react";
+import { useEffect } from "react";
+import Aos from "aos";
 
 interface Item {
   image: string;
@@ -16,11 +18,21 @@ interface CatalogProps {
 }
 
 const Catalog = ({ items, sizename }: CatalogProps) => {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+    });
+  }, []);
   return (
     <>
       <div className="grid grid-cols-1 gap-6 bg-[#fff] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {items.map((item, index) => (
-          <div className="space-y-2" key={index}>
+          <div
+            className="space-y-2"
+            key={index}
+            data-aos="fade-up"
+            data-aos-duration={1500}
+          >
             <div className="group relative h-72">
               <Image
                 key={index}

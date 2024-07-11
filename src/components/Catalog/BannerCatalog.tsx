@@ -1,19 +1,11 @@
 import Typography from "@/sandbox/Typography";
-import { Button } from "@mui/material";
+// import { Button } from "@mui/material";
 import React from "react";
 
-const BannerCatalog = ({
-  className,
-  href,
-  title,
-}: {
-  className?: string;
-  href: string;
-  title: string;
-}) => {
+const BannerCatalog = ({ title }: { title: string }) => {
   return (
     <>
-      <div className="grid h-[80vh] grid-cols-1 sm:h-[500px] md:grid-cols-2 lg:h-[80vh]">
+      {/* <div className="grid h-[80vh] grid-cols-1 sm:h-[500px] md:grid-cols-2 lg:h-[80vh]">
         <div
           className={`${className} bg-cover bg-center bg-no-repeat md:bg-center`}
         />
@@ -40,6 +32,12 @@ const BannerCatalog = ({
             </Button>
           </div>
         </div>
+      </div> */}
+      <div className="flex items-center justify-center gap-4">
+        <Typography variant="bl" weight="semibold">
+          {title}
+        </Typography>
+        <hr className="h-[2px] w-full bg-[#000]" />
       </div>
     </>
   );
