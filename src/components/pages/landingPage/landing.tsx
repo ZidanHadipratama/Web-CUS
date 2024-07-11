@@ -31,7 +31,7 @@ const bottles = [
     neck: "Ulir 18/410",
     material: "PET",
   },
-]
+];
 
 export default function LandingPage() {
   useEffect(() => {
@@ -271,7 +271,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="lg:pt-48 pt-32 px-8">
+      <div className="px-8 pt-32 lg:pt-48">
         <div
           className="px-7 sm:px-20 md:px-24 2xl:px-[12%]"
           data-aos="fade-up"
@@ -284,18 +284,19 @@ export default function LandingPage() {
             Your Trusted Partner in Innovative Plastic Packaging and Mold Design
           </Typography>
         </div>
-        <div className="pt-12 py-12 px-3 min-[500px]:px-10 sm:px-12 md:px-16 xl:px-32 2xl:px-[18%]">
-          <div className="mb-8" data-aos="fade-up"
-            data-aos-duration={1500}>
-            <Link href={'/product'}>
+        <div className="px-3 py-12 pt-12 min-[500px]:px-10 sm:px-12 md:px-16 xl:px-32 2xl:px-[18%]">
+          <div className="mb-8" data-aos="fade-up" data-aos-duration={1500}>
+            <Link href={"/product"}>
               <Typography className="flex items-center gap-2">
                 Other Products <FaArrowRight />
               </Typography>
             </Link>
           </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 justify-center">
+          <div className="grid grid-cols-1 justify-center gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
             {bottles.map((item: any, index: number) => (
-              <div className="space-y-2" key={index}
+              <div
+                className="space-y-2"
+                key={index}
                 data-aos="fade-up"
                 data-aos-duration={1500}
               >
@@ -310,11 +311,11 @@ export default function LandingPage() {
                       alt="bottles"
                       width={100}
                       height={0}
-                      className={`${className} h-[300px] sm:h-[400px] duration-300`}
+                      className={`${className} h-[300px] duration-300 sm:h-[400px]`}
                     />
                   ))}
                 </div>
-                <div className="bg-white shadow-lg rounded-b-xl p-6">
+                <div className="rounded-b-xl bg-white p-6 shadow-lg">
                   <Typography weight="bold">{item.name}</Typography>
                   <div>
                     <table>
