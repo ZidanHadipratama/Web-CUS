@@ -20,7 +20,7 @@ const footerlinks = [
 const footericons = [
   { name: FaWhatsapp, link: "https://wa.me/6285925327393" },
   { name: SiGooglemaps, link: "https://maps.app.goo.gl/HRpJ3HtREUuFKNcc9" },
-  { name: MdOutlineEmail, link: "mailto:marketing_CUS@gmail.com" },
+  { name: MdOutlineEmail, link: "mailto:marketing@cusplastic.com" },
 ];
 
 const Footer = () => {

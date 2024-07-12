@@ -39,7 +39,7 @@ export default function ServiceSection() {
             width={160}
             height={100}
           />
-          <Typography className="mt-3 text-[24px] font-semibold">
+          <Typography className="mt-3 text-[24px] font-semibold text-center">
             Packaging Technology
           </Typography>
           <Typography className="mt-2 text-[18px] font-normal text-[#919191]">
@@ -58,21 +58,6 @@ export default function ServiceSection() {
           </Typography>
           <Typography className="mt-2 text-center text-[18px] font-normal text-[#919191]">
             Can be your packaging partner.
-          </Typography>
-        </div>
-        <div className="flex h-[350px] w-[340px] flex-col items-end justify-between rounded-2xl bg-white p-7 shadow-lg">
-          <Image
-            src={"/images/service/kisan.png"}
-            alt="Kisan in Pet Mold"
-            width={125}
-            height={104}
-          />
-          <Typography className="mt-3 text-end text-[24px] font-semibold">
-            Kisan in Pet Mold
-          </Typography>
-          <Typography className="mt-2 text-end text-[18px] font-normal text-[#919191]">
-            Kisan started with only a machinery tool workshop producing PET
-            molds for local customers
           </Typography>
         </div>
       </div>

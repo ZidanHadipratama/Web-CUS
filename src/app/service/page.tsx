@@ -71,7 +71,7 @@ export default function PageService() {
         </div>
         <div className="z-[10] flex flex-wrap justify-center gap-7 px-7 sm:mt-10 sm:px-20 md:px-24 2xl:px-[12%]">
           <div
-            className="flex h-[450px] w-[340px] flex-col justify-between rounded-2xl bg-gradient-to-b from-[#FD700D] to-[#FFEADB] p-7 shadow-lg"
+            className="flex h-[450px] w-[340px] flex-col gap-10 rounded-2xl bg-gradient-to-b from-[#FD700D] to-[#ff9f5a] p-7 shadow-lg"
             data-aos="flip-up"
             data-aos-delay={200}
             data-aos-duration={1500}
@@ -85,19 +85,19 @@ export default function PageService() {
             <Typography className="mt-3 text-[24px] font-semibold text-white">
               Packaging Technology
             </Typography>
-            <Typography className="mt-2 text-[18px] font-normal text-[white]">
+            <Typography className="mt-2 text-[18px] font-normal text-[white] text-center">
               Will support your need in rigid packaging.
             </Typography>
-            <Link href="https://wa.me/+62821-2361-1660" className="flex w-full">
+            {/* <Link href="https://wa.me/+62821-2361-1660" className="flex w-full">
               <Button className="group mt-12 h-[50px] w-full rounded-md bg-[#fd700d] shadow-md hover:bg-[#e4650c] active:bg-[#ca5a0a]">
                 <Typography className="text-[16px] font-bold text-white">
                   Contact Us!
                 </Typography>
               </Button>
-            </Link>
+            </Link> */}
           </div>
           <div
-            className="flex h-[450px] w-[340px] flex-col items-center justify-between rounded-2xl bg-gradient-to-b from-[#FD700D] to-[#FFEADB] p-7 shadow-lg"
+            className="flex h-[450px] w-[340px] flex-col items-center gap-8 rounded-2xl bg-gradient-to-b from-[#FD700D] to-[#ff9f5a] p-7 shadow-lg"
             data-aos="flip-down"
             data-aos-delay={400}
             data-aos-duration={1500}
@@ -114,40 +114,13 @@ export default function PageService() {
             <Typography className="mt-2 text-center text-[18px] font-normal text-[white]">
               Can be your packaging partner.
             </Typography>
-            <Link href="https://wa.me/+62821-2361-1660" className="flex w-full">
+            {/* <Link href="https://wa.me/+62821-2361-1660" className="flex w-full">
               <Button className="group mt-12 h-[50px] w-full rounded-md bg-[#fd700d] shadow-md hover:bg-[#e4650c] active:bg-[#ca5a0a]">
                 <Typography className="text-[16px] font-bold text-white">
                   Contact Us!
                 </Typography>
               </Button>
-            </Link>
-          </div>
-          <div
-            className="flex h-[450px] w-[340px] flex-col items-end justify-between rounded-2xl bg-gradient-to-b from-[#FD700D] to-[#FFEADB] p-7 shadow-lg"
-            data-aos="flip-up"
-            data-aos-delay={600}
-            data-aos-duration={1500}
-          >
-            <Image
-              src={"/images/service/kisan.png"}
-              alt="Kisan in Pet Mold"
-              width={125}
-              height={104}
-            />
-            <Typography className="mt-3 text-end text-[24px] font-semibold text-white">
-              Kisan in Pet Mold
-            </Typography>
-            <Typography className="mt-2 text-end text-[18px] font-normal text-[white]">
-              Kisan started with only a machinery tool workshop producing PET
-              molds for local customers
-            </Typography>
-            <Link href="https://wa.me/+62821-2361-1660" className="flex w-full">
-              <Button className="group mt-12 h-[50px] w-full rounded-md bg-[#fd700d] shadow-md hover:bg-[#e4650c] active:bg-[#ca5a0a]">
-                <Typography className="text-[16px] font-bold text-white">
-                  Contact Us!
-                </Typography>
-              </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
@@ -193,7 +166,7 @@ export default function PageService() {
               Injection Stretch Blow Molding <br />
               Labeling and Shrink Label
             </Typography>
-            <div className="flex w-full justify-center lg:justify-start">
+            {/* <div className="flex w-full justify-center lg:justify-start">
               <Link href="https://wa.me/+62821-2361-1660">
                 <Button className="group mt-12 h-[50px] w-[220px] rounded-md bg-[#fd700d] shadow-md hover:bg-[#e4650c] active:bg-[#ca5a0a]">
                   <Typography className="text-[16px] font-bold text-white">
@@ -201,7 +174,7 @@ export default function PageService() {
                   </Typography>
                 </Button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -271,7 +244,7 @@ export default function PageService() {
                   molds. PT. CATUR UTAMA SEJAHTERA has been Kisan&apos;s global
                   partner for the Indonesian market since 2020
                 </Typography>
-                <div className="flex w-full justify-start">
+                {/* <div className="flex w-full justify-start">
                   <Link href="https://wa.me/+62821-2361-1660">
                     <Button className="group mt-12 h-[50px] w-[220px] rounded-md bg-[#fd700d] shadow-md hover:bg-[#e4650c] active:bg-[#ca5a0a]">
                       <Typography className="text-[16px] font-bold text-white">
@@ -279,63 +252,109 @@ export default function PageService() {
                       </Typography>
                     </Button>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </section>
 
-        <section className="mt-28 h-full w-full px-10 min-[500px]:px-20 sm:px-[16%] md:px-[20%] lg:flex lg:flex-row-reverse lg:items-center lg:justify-between lg:gap-10 lg:px-[10%] min-[1700px]:px-[24%]">
-          <div className="min-[500px]:flex min-[500px]:justify-center">
-            <Image
-              src={"/images/ourService/kisan.png"}
-              alt="kisan"
-              width={324}
-              height={218}
-              className="min-[500px]:w-[420px] lg:hidden"
+        <section className="mt-28 h-full w-full px-0 min-[500px]:px-0 sm:px-0 md:px-0 lg:flex lg:flex-row-reverse lg:items-center lg:justify-between lg:gap-10 lg:px-0 min-[1700px]:px-0">
+          <div className="relative flex h-full w-full flex-col gap-6 py-10 pb-[20px]">
+            <div
+              className="px-7 sm:px-20 md:px-24 2xl:px-[12%]"
               data-aos="fade-up"
               data-aos-duration={1500}
-            />
-            <Image
-              src={"/images/ourService/kisan-desk.png"}
-              alt="kisan"
-              width={533}
-              height={497}
-              className="hidden h-[345px] w-[344px] lg:inline xl:h-[420px] xl:w-[450px]"
-              data-aos="fade-left"
-              data-aos-duration={1500}
-            />
-          </div>
-          <div
-            className="lg:flex lg:w-[400px] lg:flex-col xl:w-[600px]"
-            data-aos="fade-right"
-            data-aos-duration={1500}
-          >
-            <Typography className="mb-5 mt-10 text-[26px] font-bold xl:text-[36px]">
-              <span className="text-[#fd700d]">Kisan in</span> Pet Mold
-            </Typography>
-            <Typography className="mb-3 text-justify lg:text-[18px]">
-              Founded in 1997, Kisan is PET Mold Maker located in Korea. Kisan
-              started with only a machinery tool workshop producing PET molds
-              for local customers
-            </Typography>
-            <Typography className="mb-3 text-justify lg:text-[18px]">
-              As a valuable mold maker, Kisan is now capable of producing the
-              complete set of Single Stage PET Molds, PET Blow Molds and PET
-              Preform Molds.
-            </Typography>
-            <Typography className="text-justify lg:text-[18px]">
-              Kisan&apos;s services area Asia, Africa, India, Middle East,
-              Australia, North and South America
-            </Typography>
-            <div className="flex w-full justify-center lg:justify-start">
-              <Link href="https://wa.me/+62821-2361-1660">
-                <Button className="group mt-12 h-[50px] w-[220px] rounded-md bg-[#fd700d] shadow-md hover:bg-[#e4650c] active:bg-[#ca5a0a]">
-                  <Typography className="text-[16px] font-bold text-white">
-                    Contact Us!
-                  </Typography>
-                </Button>
-              </Link>
+            >
+              <Typography className="text-center text-[36px] font-bold text-[#fd700d] sm:text-[40px]">
+                Our Mold
+              </Typography>
+              <Typography className="text-center text-[36px] font-bold sm:text-[40px]">
+                Speciality
+              </Typography>
+            </div>
+            <div className="z-[10] flex flex-wrap justify-center gap-7 px-7 sm:mt-10 sm:px-20 md:px-24 2xl:px-[12%]">
+              {/* Isi "Our Mold Speciality" Card */}
+              <div
+                className="flex h-[420px] w-[300px] flex-col gap-2 rounded-2xl bg-gradient-to-b from-[#FD700D] to-[#ff9f5a] p-7 shadow-lg"
+                data-aos="flip-up"
+                data-aos-delay={200}
+                data-aos-duration={1500}
+              >
+                <Image
+                  src={"/images/service/packaging.png"}
+                  alt="Packaging Technology"
+                  width={160}
+                  height={100}
+                />
+                <Typography className="mt-3 text-[24px] font-semibold text-white">
+                  Injection Stretch Blow Molding
+                </Typography>
+                <Typography className="mt-2 text-[18px] font-normal text-[white] text-left">
+                  Single stage of PET Bottle (AOKI & ASB Machine) 
+                </Typography>
+                <Typography className="mt-2 text-[18px] font-normal text-[white] text-left">
+                  Two stage of PET Bottle (Preform & Blow Molding)
+                </Typography>
+                {/* <Link href="https://wa.me/+62821-2361-1660" className="flex w-full">
+                  <Button className="group mt-12 h-[50px] w-full rounded-md bg-[#fd700d] shadow-md hover:bg-[#e4650c] active:bg-[#ca5a0a]">
+                    <Typography className="text-[16px] font-bold text-white">
+                      Contact Us!
+                    </Typography>
+                  </Button>
+                </Link> */}
+              </div>
+              <div
+                className="flex h-[420px] w-[300px] flex-col gap-2 rounded-2xl bg-gradient-to-b from-[#FD700D] to-[#ff9f5a] p-7 shadow-lg text-center"
+                data-aos="flip-up"
+                data-aos-delay={200}
+                data-aos-duration={1500}
+              >
+                <Image
+                  src={"/images/service/packaging.png"}
+                  alt="Packaging Technology"
+                  width={160}
+                  height={100}
+                />
+                <Typography className="mt-3 text-[24px] font-semibold text-white px-10">
+                  Injection Machine
+                </Typography>
+                <Typography className="mt-2 text-[18px] font-normal text-[white] text-center">
+                  Cap, Jar, Thinwall, and others
+                </Typography>
+                {/* <Link href="https://wa.me/+62821-2361-1660" className="flex w-full">
+                  <Button className="group mt-12 h-[50px] w-full rounded-md bg-[#fd700d] shadow-md hover:bg-[#e4650c] active:bg-[#ca5a0a]">
+                    <Typography className="text-[16px] font-bold text-white">
+                      Contact Us!
+                    </Typography>
+                  </Button>
+                </Link> */}
+              </div>
+              <div
+                className="flex h-[420px] w-[300px] flex-col gap-2 rounded-2xl bg-gradient-to-b from-[#FD700D] to-[#ff9f5a] p-7 shadow-lg text-right"
+                data-aos="flip-up"
+                data-aos-delay={200}
+                data-aos-duration={1500}
+              >
+                <Image
+                  src={"/images/service/packaging.png"}
+                  alt="Packaging Technology"
+                  width={160}
+                  height={100}
+                />
+                <Typography className="mt-3 text-[24px] font-semibold text-white">
+                  Injection Blow Molding
+                </Typography>
+                <Typography className="mt-2 text-[18px] font-normal text-[white] text-right">
+                  Jerry Can, Bottle and others
+                </Typography>
+                {/* <Link href="https://wa.me/+62821-2361-1660" className="flex w-full">
+                  <Button className="group mt-12 h-[50px] w-full rounded-md bg-[#fd700d] shadow-md hover:bg-[#e4650c] active:bg-[#ca5a0a]">
+                    <Typography className="text-[16px] font-bold text-white">
+                      Contact Us!
+                    </Typography>
+                  </Button>
+                </Link> */}
+              </div>
             </div>
           </div>
         </section>
@@ -367,7 +386,7 @@ export default function PageService() {
             <Typography className="text-center text-[26px] font-bold lg:w-[600px] lg:text-[32px] lg:font-medium">
               Ready to secure your packaging Today?
             </Typography>
-            <Link href="https://wa.me/+62821-2361-1660">
+            <Link href="mailto:marketing@cusplastic.com">
               <Button className="group mt-12 h-[50px] w-[220px] rounded-md bg-[#fd700d] shadow-md hover:bg-[#e4650c] active:bg-[#ca5a0a]">
                 <Typography className="text-[16px] font-bold text-white">
                   Contact Us!

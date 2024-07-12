@@ -76,7 +76,7 @@ export default function LandingPage() {
             <Typography
               className={"text-[20px] font-medium text-white xl:text-[22px]"}
             >
-              Your Highid Packaging Partners!
+              Your Rigid Packaging Partners!
             </Typography>
           </div>
         </div>
@@ -202,7 +202,7 @@ export default function LandingPage() {
         </div>
         <div className="z-[10] flex flex-wrap justify-center gap-7 px-7 sm:mt-10 sm:px-20 md:px-24 2xl:px-[12%]">
           <div
-            className="flex h-[350px] w-[340px] flex-col justify-between rounded-2xl bg-white p-7 shadow-lg"
+            className="flex h-[350px] w-[340px] flex-col justify-between rounded-2xl bg-white p-7 shadow-lg text-center"
             data-aos="flip-up"
             data-aos-delay={200}
             data-aos-duration={1500}
@@ -237,26 +237,6 @@ export default function LandingPage() {
             </Typography>
             <Typography className="mt-2 text-center text-[18px] font-normal text-[#919191]">
               Can be your packaging partner.
-            </Typography>
-          </div>
-          <div
-            className="flex h-[350px] w-[340px] flex-col items-end justify-between rounded-2xl bg-white p-7 shadow-lg"
-            data-aos="flip-up"
-            data-aos-delay={600}
-            data-aos-duration={1500}
-          >
-            <Image
-              src={"/images/service/kisan.png"}
-              alt="Kisan in Pet Mold"
-              width={125}
-              height={104}
-            />
-            <Typography className="mt-3 text-end text-[24px] font-semibold">
-              Kisan in Pet Mold
-            </Typography>
-            <Typography className="mt-2 text-end text-[18px] font-normal text-[#919191]">
-              Kisan started with only a machinery tool workshop producing PET
-              molds for local customers
             </Typography>
           </div>
         </div>
