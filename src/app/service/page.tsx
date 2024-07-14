@@ -71,13 +71,13 @@ export default function PageService() {
         </div>
         <div className="z-[10] flex flex-wrap justify-center gap-7 px-7 sm:mt-10 sm:px-20 md:px-24 2xl:px-[12%]">
           <div
-            className="flex h-[450px] w-[340px] flex-col gap-10 rounded-2xl bg-gradient-to-b from-[#FD700D] to-[#ff9f5a] p-7 shadow-lg"
+            className="flex h-[450px] w-[340px] flex-col gap-10 rounded-2xl bg-gradient-to-b from-[#FD700D] to-[#ff9f5a] p-7 shadow-lg items-center"
             data-aos="flip-up"
             data-aos-delay={200}
             data-aos-duration={1500}
           >
             <Image
-              src={"/images/service/packaging.png"}
+              src={"/images/service/blow.png"}
               alt="Packaging Technology"
               width={160}
               height={100}
@@ -105,8 +105,8 @@ export default function PageService() {
             <Image
               src={"/images/service/mold.png"}
               alt="Mold Service"
-              width={140}
-              height={94}
+              width={160}
+              height={100}
             />
             <Typography className="mt-3 text-[24px] font-semibold text-white">
               Mold Service
@@ -129,7 +129,7 @@ export default function PageService() {
         <section className="mt-16 h-full w-full px-10 min-[500px]:px-20 sm:px-[16%] md:px-[20%] lg:flex lg:flex-row-reverse lg:items-center lg:justify-between lg:gap-10 lg:px-[10%] xl:py-16 min-[1700px]:px-[24%]">
           <div className="min-[500px]:flex min-[500px]:justify-center">
             <Image
-              src={"/images/ourService/packaging.png"}
+              src={"/images/ourService/packaging2.png"}
               alt="packaging"
               width={324}
               height={218}
@@ -138,7 +138,7 @@ export default function PageService() {
               data-aos-duration={1500}
             />
             <Image
-              src={"/images/ourService/packaging-desk.png"}
+              src={"/images/ourService/packaging-desk2.png"}
               alt="packaging"
               width={647}
               height={436}
@@ -281,7 +281,7 @@ export default function PageService() {
                 data-aos-duration={1500}
               >
                 <Image
-                  src={"/images/service/packaging.png"}
+                  src={"/images/service/strecth.png"}
                   alt="Packaging Technology"
                   width={160}
                   height={100}
@@ -304,16 +304,16 @@ export default function PageService() {
                 </Link> */}
               </div>
               <div
-                className="flex h-[420px] w-[300px] flex-col gap-2 rounded-2xl bg-gradient-to-b from-[#FD700D] to-[#ff9f5a] p-7 shadow-lg text-center"
+                className="flex h-[420px] w-[300px] flex-col gap-2 rounded-2xl bg-gradient-to-b from-[#FD700D] to-[#ff9f5a] p-7 shadow-lg text-center items-center"
                 data-aos="flip-up"
                 data-aos-delay={200}
                 data-aos-duration={1500}
               >
                 <Image
-                  src={"/images/service/packaging.png"}
+                  src={"/images/service/machine.png"}
                   alt="Packaging Technology"
-                  width={160}
-                  height={100}
+                  width={140}
+                  height={94}
                 />
                 <Typography className="mt-3 text-[24px] font-semibold text-white px-10">
                   Injection Machine
@@ -330,13 +330,13 @@ export default function PageService() {
                 </Link> */}
               </div>
               <div
-                className="flex h-[420px] w-[300px] flex-col gap-2 rounded-2xl bg-gradient-to-b from-[#FD700D] to-[#ff9f5a] p-7 shadow-lg text-right"
+                className="flex h-[420px] w-[300px] flex-col gap-2 rounded-2xl bg-gradient-to-b from-[#FD700D] to-[#ff9f5a] p-7 shadow-lg text-right items-end"
                 data-aos="flip-up"
                 data-aos-delay={200}
                 data-aos-duration={1500}
               >
                 <Image
-                  src={"/images/service/packaging.png"}
+                  src={"/images/service/blowbalik.png"}
                   alt="Packaging Technology"
                   width={160}
                   height={100}
@@ -355,10 +355,12 @@ export default function PageService() {
                   </Button>
                 </Link> */}
               </div>
+              
             </div>
           </div>
         </section>
       </div>
+
 
       <div className="relative h-full w-full bg-gradient-to-l from-[#fff5ee] to-[#fd700d] p-10">
         <div>
