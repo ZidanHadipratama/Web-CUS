@@ -1,5 +1,4 @@
 import Typography from "@/sandbox/Typography";
-import Image from "next/image";
 import React from "react";
 import { useEffect } from "react";
 import Aos from "aos";
@@ -34,12 +33,10 @@ const Catalog = ({ items, sizename }: CatalogProps) => {
             data-aos-duration={1500}
           >
             <div className="group relative h-75">
-              <Image
-                key={index}
+              <img
                 src={item.image}
                 alt="bottles"
                 width={200}
-                height={0}
                 className="h-[400px] w-full rounded-lg duration-200 ease-in-out object-cover"
               />
             </div>

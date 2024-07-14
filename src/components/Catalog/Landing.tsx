@@ -3,7 +3,6 @@ import Typography from "@/sandbox/Typography";
 import React from "react";
 import { useEffect } from "react";
 import Aos from "aos";
-import Image from "next/image";
 
 const Landing = () => {
   useEffect(() => {
@@ -14,21 +13,15 @@ const Landing = () => {
   return (
     <>
       <div className="relative h-[640px] w-full">
-        <Image
-          src={"/images/catalog/landing/bg.jpg"}
+        <img
+          src="/images/catalog/landing/bg.jpg"
           alt="Background Image"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          className="z-[-1] min-[500px]:hidden"
+          className="z-[-1] min-[500px]:hidden w-full h-full object-cover"
         />
-        <Image
-          src={"/images/catalog/landing/bg.jpg"}
+        <img
+          src="/images/catalog/landing/bg.jpg"
           alt="Background Image"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          className="z-[-1] hidden min-[500px]:inline"
+          className="z-[-1] hidden min-[500px]:inline w-full h-full object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <div

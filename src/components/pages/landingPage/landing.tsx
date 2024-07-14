@@ -202,16 +202,16 @@ export default function LandingPage() {
         </div>
         <div className="z-[10] flex flex-wrap justify-center gap-7 px-7 sm:mt-10 sm:px-20 md:px-24 2xl:px-[12%]">
           <div
-            className="flex h-[350px] w-[340px] flex-col justify-between rounded-2xl bg-white p-7 shadow-lg text-center"
+            className="flex h-[350px] w-[340px] flex-col justify-between rounded-2xl bg-white p-7 shadow-lg text-center items-center"
             data-aos="flip-up"
             data-aos-delay={200}
             data-aos-duration={1500}
           >
             <Image
-              src={"/images/service/packaging.png"}
+              src={"/images/service/blow.png"}
               alt="Packaging Technology"
-              width={160}
-              height={100}
+              width={140}
+              height={94}
             />
             <Typography className="mt-3 text-[24px] font-semibold">
               Packaging Technology

@@ -1,6 +1,5 @@
 import Typography from "@/sandbox/Typography";
 import Button from "@mui/material/Button";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -8,15 +7,15 @@ export default function ServiceSection() {
   return (
     <div className="relative flex h-full w-full flex-col gap-6 bg-[#FFEADB] py-10 pb-[20px] lg:bg-gradient-to-b lg:from-[#FFEADB] lg:to-[#FD700D]">
       <div>
-        <Image
-          src={"/images/service/vector.png"}
+        <img
+          src="/images/service/vector.png"
           alt="vektor"
           width={390}
           height={360}
           className="absolute -bottom-28 h-[360px] w-full lg:hidden"
         />
-        <Image
-          src={"/images/service/vector-deskk.png"}
+        <img
+          src="/images/service/vector-deskk.png"
           alt="vektor"
           width={1636}
           height={139}
@@ -33,11 +32,11 @@ export default function ServiceSection() {
       </div>
       <div className="z-[10] flex flex-wrap justify-center gap-7 px-7 sm:mt-10 sm:px-20 md:px-24 2xl:px-[12%]">
         <div className="flex h-[350px] w-[340px] flex-col justify-between rounded-2xl bg-white p-7 shadow-lg">
-          <Image
-            src={"/images/service/packaging.png"}
+          <img
+            src="/images/service/mold.png"
             alt="Packaging Technology"
-            width={160}
-            height={100}
+            width={140}
+            height={94}
           />
           <Typography className="mt-3 text-[24px] font-semibold text-center">
             Packaging Technology
@@ -47,8 +46,8 @@ export default function ServiceSection() {
           </Typography>
         </div>
         <div className="flex h-[350px] w-[340px] flex-col items-center justify-between rounded-2xl bg-white p-7 shadow-lg">
-          <Image
-            src={"/images/service/mold.png"}
+          <img
+            src="/images/service/mold.png"
             alt="Mold Service"
             width={140}
             height={94}

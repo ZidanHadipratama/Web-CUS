@@ -5,7 +5,6 @@ import Layout from "@/layouts/Layouts";
 import Typography from "@/sandbox/Typography";
 import { Button } from "@mui/material";
 import Aos from "aos";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
 
@@ -18,21 +17,15 @@ export default function PageService() {
     <Layout withNavbar withFooter className="overflow-hidden">
       <SEO title="Our Service" />
       <div className="relative h-[640px] w-full">
-        <Image
-          src={"/images/service/upSectionMobile.png"}
+        <img
+          src="/images/service/upSectionMobile.png"
           alt="Background Image"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          className="z-[-1] min-[500px]:hidden"
+          className="z-[-1] min-[500px]:hidden w-full h-full object-cover"
         />
-        <Image
-          src={"/images/service/upSection.png"}
+        <img
+          src="/images/service/upSection.png"
           alt="Background Image"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          className="z-[-1] hidden min-[500px]:inline"
+          className="z-[-1] hidden min-[500px]:inline w-full h-full object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <div
@@ -76,8 +69,8 @@ export default function PageService() {
             data-aos-delay={200}
             data-aos-duration={1500}
           >
-            <Image
-              src={"/images/service/blow.png"}
+            <img
+              src="/images/service/blow.png"
               alt="Packaging Technology"
               width={160}
               height={100}
@@ -102,8 +95,8 @@ export default function PageService() {
             data-aos-delay={400}
             data-aos-duration={1500}
           >
-            <Image
-              src={"/images/service/mold.png"}
+            <img
+              src="/images/service/mold.png"
               alt="Mold Service"
               width={160}
               height={100}
@@ -128,8 +121,8 @@ export default function PageService() {
       <div className="pb-20">
         <section className="mt-16 h-full w-full px-10 min-[500px]:px-20 sm:px-[16%] md:px-[20%] lg:flex lg:flex-row-reverse lg:items-center lg:justify-between lg:gap-10 lg:px-[10%] xl:py-16 min-[1700px]:px-[24%]">
           <div className="min-[500px]:flex min-[500px]:justify-center">
-            <Image
-              src={"/images/ourService/packaging2.png"}
+            <img
+              src="/images/ourService/packaging2.png"
               alt="packaging"
               width={324}
               height={218}
@@ -137,8 +130,8 @@ export default function PageService() {
               data-aos="fade-up"
               data-aos-duration={1500}
             />
-            <Image
-              src={"/images/ourService/packaging-desk2.png"}
+            <img
+              src="/images/ourService/packaging-desk2.png"
               alt="packaging"
               width={647}
               height={436}
@@ -180,15 +173,15 @@ export default function PageService() {
 
         <section className="relative mb-16 mt-20 h-full w-full">
           <div className="absolute -top-10">
-            <Image
-              src={"/images/ourService/vector.png"}
+            <img
+              src="/images/ourService/vector.png"
               alt="vektor"
               width={1010}
               height={1010}
               className="h-[1010px] w-[1024px] lg:hidden"
             />
-            <Image
-              src={"/images/ourService/vector-desk.png"}
+            <img
+              src="/images/ourService/vector-desk.png"
               alt="vektor"
               width={1636}
               height={139}
@@ -197,8 +190,8 @@ export default function PageService() {
           </div>
           <div className="relative z-[101] px-10 min-[500px]:px-20 sm:px-[16%] md:px-[20%] lg:flex lg:items-center lg:justify-between lg:gap-10 lg:px-[10%] min-[1700px]:px-[24%]">
             <div className="min-[500px]:flex min-[500px]:justify-center lg:w-[900px] lg:justify-start">
-              <Image
-                src={"/images/ourService/mold.png"}
+              <img
+                src="/images/ourService/mold.png"
                 alt="mold"
                 width={324}
                 height={218}
@@ -206,8 +199,8 @@ export default function PageService() {
                 data-aos="fade-up"
                 data-aos-duration={1500}
               />
-              <Image
-                src={"/images/ourService/mold-desk.png"}
+              <img
+                src="/images/ourService/mold-desk.png"
                 alt="mold"
                 width={549}
                 height={501}
@@ -280,8 +273,8 @@ export default function PageService() {
                 data-aos-delay={200}
                 data-aos-duration={1500}
               >
-                <Image
-                  src={"/images/service/strecth.png"}
+                <img
+                  src="/images/service/strecth.png"
                   alt="Packaging Technology"
                   width={160}
                   height={100}
@@ -309,8 +302,8 @@ export default function PageService() {
                 data-aos-delay={200}
                 data-aos-duration={1500}
               >
-                <Image
-                  src={"/images/service/machine.png"}
+                <img
+                  src="/images/service/machine.png"
                   alt="Packaging Technology"
                   width={140}
                   height={94}
@@ -335,8 +328,8 @@ export default function PageService() {
                 data-aos-delay={200}
                 data-aos-duration={1500}
               >
-                <Image
-                  src={"/images/service/blowbalik.png"}
+                <img
+                  src="/images/service/blowbalik.png"
                   alt="Packaging Technology"
                   width={160}
                   height={100}
@@ -364,15 +357,15 @@ export default function PageService() {
 
       <div className="relative h-full w-full bg-gradient-to-l from-[#fff5ee] to-[#fd700d] p-10">
         <div>
-          <Image
-            src={"/images/cta/vector-bunga-desk-service.png"}
+          <img
+            src="/images/cta/vector-bunga-desk-service.png"
             alt="vector"
             width={140}
             height={140}
             className="absolute bottom-0 left-0 hidden lg:flex"
           />
-          <Image
-            src={"/images/cta/vector-bunga-desk-service-2.png"}
+          <img
+            src="/images/cta/vector-bunga-desk-service-2.png"
             alt="vector"
             width={140}
             height={140}
