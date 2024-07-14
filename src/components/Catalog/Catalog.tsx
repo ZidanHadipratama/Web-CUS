@@ -33,14 +33,14 @@ const Catalog = ({ items, sizename }: CatalogProps) => {
             data-aos="fade-up"
             data-aos-duration={1500}
           >
-            <div className="group relative h-72">
+            <div className="group relative h-75">
               <Image
                 key={index}
                 src={item.image}
                 alt="bottles"
                 width={200}
                 height={0}
-                className="h-full w-full rounded-lg object-cover object-top duration-200 ease-in-out"
+                className="h-[400px] w-full rounded-lg duration-200 ease-in-out object-cover"
               />
             </div>
             <div>

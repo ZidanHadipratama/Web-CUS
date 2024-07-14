@@ -258,7 +258,7 @@ export default function PageService() {
           </div>
         </section>
 
-        <section className="mt-28 h-full w-full px-0 min-[500px]:px-0 sm:px-0 md:px-0 lg:flex lg:flex-row-reverse lg:items-center lg:justify-between lg:gap-10 lg:px-0 min-[1700px]:px-0">
+        <section className="mt-40 h-full w-full px-0 min-[500px]:px-0 sm:px-0 md:px-0 lg:flex lg:flex-row-reverse lg:items-center lg:justify-between lg:gap-10 lg:px-0 min-[1700px]:px-0">
           <div className="relative flex h-full w-full flex-col gap-6 py-10 pb-[20px]">
             <div
               className="px-7 sm:px-20 md:px-24 2xl:px-[12%]"
