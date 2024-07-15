@@ -226,10 +226,12 @@ export default function PageService() {
                   (2D & 3D)
                 </Typography>
                 <Typography className="mb-3 text-justify lg:text-[18px]">
-                  PT. CATUR UTAMA SEJAHTERA has mold times. maker partners
-                  (local and overseas mold makers) who have years of experience
-                  in their fields with good reputations and will support you
-                  with faster mold making times.
+                  PT. CATUR UTAMA SEJAHTERA has mold
+                  maker partners (local and overseas mold
+                  makers) who have years of experience in
+                  their fields with good reputations and will
+                  support you with faster mold making
+                  times.
                 </Typography>
                 <Typography className="text-justify lg:text-[18px]">
                   One of our mold manufacturing partners is KISAN PRECISION CO.,
@@ -381,7 +383,7 @@ export default function PageService() {
             <Typography className="text-center text-[26px] font-bold lg:w-[600px] lg:text-[32px] lg:font-medium">
               Ready to secure your packaging Today?
             </Typography>
-            <Link href="mailto:marketing@cusplastic.com">
+            <Link href="mailto:marketing@cusplastic.co.id">
               <Button className="group mt-12 h-[50px] w-[220px] rounded-md bg-[#fd700d] shadow-md hover:bg-[#e4650c] active:bg-[#ca5a0a]">
                 <Typography className="text-[16px] font-bold text-white">
                   Contact Us!

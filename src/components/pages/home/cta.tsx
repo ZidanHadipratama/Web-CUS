@@ -34,7 +34,7 @@ export default function CTA() {
             Ready to secure your packaging Today?
           </Typography>
           <Link
-            href="https://wa.me/+62821-2361-1660"
+            href="mailto:marketing@cusplastic.co.id"
             data-aos="fade-up"
             data-aos-delay={400}
             data-aos-duration={1500}

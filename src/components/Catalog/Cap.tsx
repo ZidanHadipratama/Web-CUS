@@ -33,7 +33,7 @@ const caps = [
   {
     image: "/images/catalog/cap/c5.png",
     name: "FLIPTOP TUBE CAP",
-    size: "55 mm",
+    size: "50 mm",
     neck: "",
     material: "PP",
   },

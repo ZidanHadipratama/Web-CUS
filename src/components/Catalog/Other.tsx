@@ -40,7 +40,7 @@ const others = [
   {
     image: "/images/catalog/others/o6.png",
     name: "LOTION PUMP 28/410",
-    size: "18/410",
+    size: "28/410",
     neck: "Ulir",
     material: "PP",
   },
@@ -60,20 +60,13 @@ const others = [
   },
   {
     image: "/images/catalog/others/o9.png",
-    name: "AIRLESS BOTTLE 28/410",
-    size: "100 ml",
-    neck: "",
-    material: "PP;PS",
-  },
-  {
-    image: "/images/catalog/others/o10.png",
     name: "2 IN 1 NASAL INHALER",
     size: "",
     neck: "",
     material: "PP",
   },
   {
-    image: "/images/catalog/others/o1.png",
+    image: "/images/catalog/others/o10.png",
     name: "POT JAR",
     size: "12 gr",
     neck: "",
